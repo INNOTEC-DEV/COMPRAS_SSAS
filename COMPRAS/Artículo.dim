@@ -1,0 +1,1390 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="48d4b660-52e1-488a-95f8-869614e21a88" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Artículo</ID>
+  <Name>Artículo</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="16" scrolltop="-2922" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="95" x="5768" y="6826" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TD_ARTICULO" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="6509" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00006d19000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="COMP_TD_ARTICULO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>16</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2922</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>95</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b1d106a9-b3d7-4e7b-9338-4eca3f47de8b">
+    <DataSourceViewID>DWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="5854736e-ca2c-45ec-8544-32d106a4ca7c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="d0521e89-61eb-4438-817f-f968850501ab">
+      <ID>ID ARTICULO</ID>
+      <Name>ID ARTICULO</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>83477</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="faea3031-a328-48fd-a31a-50145a62a8dd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7a46ae1-27a9-4d77-9844-e25b6c837b2a">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>ID_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="132f5ffc-a59b-4dcb-8002-f1c5ebb68e5d">
+          <AttributeID>COD ARTICULO</AttributeID>
+          <Name>Código artículo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="19b218a6-266b-4403-a9d3-d9400442c0d4">
+          <AttributeID>DES ARTICULO</AttributeID>
+          <Name>DES ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7d92782d-729a-4628-9003-30234ea823cb">
+          <AttributeID>DES CLASE ARTICULO</AttributeID>
+          <Name>DES CLASE ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="65bb73ad-7963-4902-9c66-b79c3e3a744c">
+          <AttributeID>DES CATEGORIA ARTICULO</AttributeID>
+          <Name>DES CATEGORIA ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="37996b5c-9eac-4224-b42e-da0485f6a7eb">
+          <AttributeID>DES SEGMENTO ARTICULO</AttributeID>
+          <Name>DES SEGMENTO ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1b03bb53-bb8a-4703-80fd-e65e6d3f4a64">
+          <AttributeID>DES MARCA ARTICULO</AttributeID>
+          <Name>DES MARCA ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="12c96cad-8322-4840-874c-3ea57114ce35">
+          <AttributeID>MAXIMO</AttributeID>
+          <Name>Máximo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ef4b1b6-96e0-45e6-8132-d12717f9177a">
+          <AttributeID>MINIMO</AttributeID>
+          <Name>Mínimo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b1c8971b-8fd5-46bb-b530-d96bcbd72e61">
+          <AttributeID>REORDEN</AttributeID>
+          <Name>Reorden</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dfac9f1b-f548-4abd-98d8-46656225e817">
+          <AttributeID>IND TIPO IMPUESTO</AttributeID>
+          <Name>Indicador tipo de impuesto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7991a0f0-ce33-4dc3-917c-01d92dfd0e1d">
+          <AttributeID>IND LOTE</AttributeID>
+          <Name>Indicador de Lote</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="496de3eb-b818-4662-b47c-14760e8e822f">
+          <AttributeID>IND ACTIVO</AttributeID>
+          <Name>Indicador activo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c5d0be89-7f2d-4875-ac6c-52d5e4724a13">
+          <AttributeID>IND IMPUESTO VENTAS</AttributeID>
+          <Name>Indicador de Impuesto de Ventas</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee1dbde7-2d69-4d55-8fb9-b3abbeea953e">
+          <AttributeID>NOMBRE LARGO</AttributeID>
+          <Name>Nombre Largo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="13921715-be2b-471f-9ba5-10fb3e76c571">
+          <AttributeID>IND REQUIERE SERIE</AttributeID>
+          <Name>Indicador Requiere serie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1025e702-9410-4abb-85d2-1a6f3662806f">
+          <AttributeID>GARANTIA</AttributeID>
+          <Name>Garantía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d82499cc-c76b-4d90-b073-46257b22ad8b">
+          <AttributeID>IND IMPORTADO</AttributeID>
+          <Name>Indicador de importado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6fbecefd-54cd-4f2c-b7b1-8cf4270a0541">
+          <AttributeID>COSTO DOLARES</AttributeID>
+          <Name>Costo en dólares</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="164b74c0-db3c-41a0-a47e-a1643a881a3b">
+          <AttributeID>MARGEN UTILIDAD</AttributeID>
+          <Name>Margen Utilidad</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ed9065db-2fcc-4a19-a142-add0fc80b407">
+          <AttributeID>IND SOLICITA SERIE</AttributeID>
+          <Name>Indicador Solicita serie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ecba8d0-9ccd-4dad-b4bb-7fd4b8e55dca">
+          <AttributeID>MODELO</AttributeID>
+          <Name>Modelo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cab62bec-c8fc-4942-b4d4-402cc7eec0ff">
+          <AttributeID>IND PERMITE EXTRAGARANTIA</AttributeID>
+          <Name>Indicador permite extragarantía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e93fe243-832d-4ec4-bed9-54c7282086ae">
+          <AttributeID>MAX MESES EXTRAGARANTIA</AttributeID>
+          <Name>Máximo meses extragarantía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b24b9df6-f419-4b1d-8d8c-85350857949b">
+          <AttributeID>IND FACTURA EXTRAGARANTIA</AttributeID>
+          <Name>Indicador factura extragarantía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d45bd90a-6afb-462f-a7dd-b45740b0430a">
+          <AttributeID>CODIGO ARTICULO SUSTITUTO</AttributeID>
+          <Name>Código artículo sustituto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0a7078fc-7427-49db-b0f9-5141d5a12cac">
+          <AttributeID>ULTIMO COSTO</AttributeID>
+          <Name>Último Costo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b8aa8d1-6fb6-4b4e-8214-9eab2f1d6c05">
+          <AttributeID>IND COMPRA TIENDA</AttributeID>
+          <Name>Indicador compra tienda</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="15c4efa5-13c6-464d-8e60-083fea1cafa2">
+          <AttributeID>IND REGALIA</AttributeID>
+          <Name>Indicador de regalía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="143798d2-a768-42ac-b07a-c52b4fcd2a1c">
+          <AttributeID>FECHA ULTIMA COMPRA</AttributeID>
+          <Name>Fecha última compra</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ff09148a-4606-44b7-8030-e3e619b7f4aa">
+          <AttributeID>MARGEN INICIAL</AttributeID>
+          <Name>Margen inicial</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c74b4008-b745-46bc-9dcf-dcdb91bc6ed7">
+          <AttributeID>MARGEN FINAL</AttributeID>
+          <Name>Margen Final</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a346fe5d-8960-4102-8668-4daa2f34d19a">
+          <AttributeID>MARGEN SEGUNDA</AttributeID>
+          <Name>Margen segunda</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="01caf68d-ba44-4acf-a5bb-0ced5d40b764">
+          <AttributeID>FECHA ULTIMO COSTO</AttributeID>
+          <Name>Fecha último costo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="73836f34-94af-4370-9cc5-85ff35e7633a">
+          <AttributeID>IND VAL CANTIDAD PEDIDO</AttributeID>
+          <Name>Indicador validación de cantidad de pedido</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b7736f56-a647-422b-8250-d3dbd1c51d13">
+          <AttributeID>CANTIDAD PEDIDA VAR</AttributeID>
+          <Name>Cantidad pedida de variación</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="340227ed-0775-4e8f-8075-24ea8d83d991">
+          <AttributeID>CONDICION REABASTECIMIENTO</AttributeID>
+          <Name>Condición de reabastecimiento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8d2393ea-48e0-4664-9ef9-1159065754c7">
+          <AttributeID>CANTIDAD DIAS NUEVO</AttributeID>
+          <Name>Cantidad de días nuevo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c860714d-ad93-4a74-9db9-49c53ec44d56">
+          <AttributeID>DIAS REABASTECIMIENTO</AttributeID>
+          <Name>Días para reabastecimiento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="11f4ceab-162c-4463-9d9b-b3078481b1b8">
+          <AttributeID>IND FACIL MANEJO</AttributeID>
+          <Name>Indicador de fácil manejo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="659efb5b-2343-4639-babb-03ef3be3d46f">
+          <AttributeID>ULTIMO COSTO DIGITADO</AttributeID>
+          <Name>Último Costo digitado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5e179c35-8cde-4c3f-8f92-184c69f5fe42">
+          <AttributeID>CLASE PRODUCTO</AttributeID>
+          <Name>Clase del producto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="348edcc7-cb80-45d4-82cb-9c33aab0ebd6">
+          <AttributeID>IND FACTURA ASISTENCIA</AttributeID>
+          <Name>Indicador factura asistencia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="46cbbcaa-eb64-4c2d-a486-7346d69c8e62">
+          <AttributeID>IND SUSPENDIDO</AttributeID>
+          <Name>Indicador Suspendido</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="924eea54-27ba-43d7-81fe-eb096e14af6b">
+          <AttributeID>MOTIVO SUSPENSION</AttributeID>
+          <Name>Motivo suspensión</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0d9fcadc-1f8f-4ee7-bf97-b3d61444047f">
+          <AttributeID>IND DISTRIBUCION</AttributeID>
+          <Name>Indicador distribución</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="04e397b6-d412-4cc8-8302-7fd7c18d1d0f">
+          <AttributeID>FECHA HASTA CUANDO DISTRIBUYE</AttributeID>
+          <Name>Fecha hasta cuando se distribuye</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c5470964-33bf-4923-a8ed-4b88f6aae9b0">
+          <AttributeID>MOTIVO DISTRIBUCION</AttributeID>
+          <Name>Motivo de distribución</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5a98ff7b-ae94-4bfa-bf03-7b61a8d87a0a">
+          <AttributeID>MARGEN UTILIDAD MINIMA</AttributeID>
+          <Name>Margen utilidad mínima</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0ffceff8-dcef-4d58-8a46-8231b133ed54">
+          <AttributeID>MARGEN INICIAL GOLFITO</AttributeID>
+          <Name>Margen inicial Golfito</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7556b36f-ba41-441b-83df-9a263814b676">
+          <AttributeID>MARGEN FINAL GOLFITO</AttributeID>
+          <Name>Margen final Golfito</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="39006894-efc4-4e5e-a638-6950ebdc4627">
+          <AttributeID>MARGEN SEGUNDA GOLFITO</AttributeID>
+          <Name>Margen segunda Golfito</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5aa3c6c7-5cb3-4f38-b94b-d9ff3fa15f0b">
+          <AttributeID>TIPO PRODUCTO</AttributeID>
+          <Name>Tipo de Producto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f0833e7c-1703-4a4a-8d7d-930f4e87faa3">
+          <AttributeID>CLASIFICACION</AttributeID>
+          <Name>Clasificación</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7ac818a7-e332-4c8a-b8ca-b49c4608ae90">
+          <AttributeID>DES IND DESCONTINUADO</AttributeID>
+          <Name>DES IND DESCONTINUADO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9362f672-fc17-419d-9a6e-63f41c2b4ca1">
+          <AttributeID>DES MOTIVO DESCONTINUADO</AttributeID>
+          <Name>DES MOTIVO DESCONTINUADO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f36d164d-779b-4c6f-9f02-6d22cd6d78a1">
+          <AttributeID>DES COMPANIA</AttributeID>
+          <Name>Compañía</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="171f629d-eee1-4c63-801f-df371ecda73b">
+      <ID>COD ARTICULO</ID>
+      <Name>Código artículo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d9b96d5f-ead8-4f7c-937b-2f6d105ad184">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7da3c837-c8fa-4e0b-a467-883c6cc78497">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>COD_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6fa26ed8-1315-49a1-9cae-43c3497b795b">
+      <ID>DES ARTICULO</ID>
+      <Name>DES ARTICULO</Name>
+      <EstimatedCount>55944</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f08d85ab-762d-4f22-89a1-7a01d5930fc0">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5c11fdc-346d-438c-b844-53f40032bdef">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>COD_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="415821d8-09a9-494f-b05b-ee1cc9fa65ba">
+        <DataType>WChar</DataType>
+        <DataSize>200</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="598c8647-3439-47dd-b64c-76f858e6fdcf">
+          <TableID>COMP_TD_ARTICULO</TableID>
+          <ColumnID>DES_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="9bcb30f5-80a0-4420-b4dc-13a2872e1ddb">
+        <DataType>WChar</DataType>
+        <DataSize>200</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5fbfa3a5-08b0-4e10-a952-aebef8498cff">
+          <TableID>COMP_TD_ARTICULO</TableID>
+          <ColumnID>DES_ARTICULO</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6219538d-b0d2-450c-a88a-69495796dc52">
+      <ID>DES CLASE ARTICULO</ID>
+      <Name>DES CLASE ARTICULO</Name>
+      <EstimatedCount>27</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6ef85d73-4604-4044-acb1-3216eb62685c">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fca11046-511d-48f2-8c95-a79f0d36874a">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>DES_CLASE_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a27a46cf-7c8f-4856-9835-7e5bb41646e2">
+      <ID>DES CATEGORIA ARTICULO</ID>
+      <Name>DES CATEGORIA ARTICULO</Name>
+      <EstimatedCount>107</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="adb31751-ea10-428f-b0f1-e67a6b2354f6">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce93a4dd-c30b-4dc5-a1d1-1850c1df4a3c">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>DES_CATEGORIA_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7c598786-7a92-4028-a42e-cb0ca9204dd4">
+      <ID>DES SEGMENTO ARTICULO</ID>
+      <Name>DES SEGMENTO ARTICULO</Name>
+      <EstimatedCount>572</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="efe5d596-4e93-417f-9e96-382775635260">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8e65885-ac8f-4736-8168-36c9c8408fac">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>DES_SEGMENTO_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eafe29b0-3358-4a64-ba43-9555cbdee1cf">
+      <ID>DES MARCA ARTICULO</ID>
+      <Name>DES MARCA ARTICULO</Name>
+      <EstimatedCount>2071</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="be851ef7-4a84-4d9e-88fe-8d01af588e38">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20d19aca-2ac6-4639-b2db-2f3c92ca6444">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>DES_MARCA_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f1828b0-b237-46f6-93a2-b91785ec421d">
+      <ID>MAXIMO</ID>
+      <Name>Máximo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="683ac00c-4199-48eb-a5e1-634f46b0e752">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d77be59-822d-4722-a6cb-1f98c65f292b">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MAXIMO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fbab5feb-fa0c-45ba-95cd-1cf6670cd32a">
+      <ID>MINIMO</ID>
+      <Name>Mínimo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc416531-4d23-4fc5-bac1-fb36ccccfcd9">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2e7ef51-9eac-4c9a-94d4-a64e4ea83672">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MINIMO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e13ccf0-e179-45f0-986b-209976dff911">
+      <ID>REORDEN</ID>
+      <Name>Reorden</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="72cc36fe-cb3c-4760-9927-01b98414a979">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc0da3c0-6543-4fcc-aa72-ec932c4e8c04">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>REORDEN</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a883d04-cbfd-4c79-8429-8dfae40a86bd">
+      <ID>IND TIPO IMPUESTO</ID>
+      <Name>Indicador tipo de impuesto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e89fae17-6c26-4bd0-a795-b279102bf9bd">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a584457-b9ff-41bc-a38d-64d71795bac8">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_TIPO_IMPUESTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac01f8ed-e886-4896-aa1d-fe97eb1dbdad">
+      <ID>IND LOTE</ID>
+      <Name>Indicador de Lote</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="92a05376-1a37-48f8-802f-c460f5d98ae9">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51327d0f-c42c-471f-91e6-ca35ecd6098d">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_LOTE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6da7f57f-d436-4239-8e5b-61fb9bdaac7d">
+      <ID>IND ACTIVO</ID>
+      <Name>Indicador activo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="690e3190-8fe6-47a5-8954-6dfd9f08ec50">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19e3da93-a00e-4034-b6a0-e68e9cd9505a">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_ACTIVO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0167abf0-f4cd-4957-928d-811229343b67">
+      <ID>IND IMPUESTO VENTAS</ID>
+      <Name>Indicador de Impuesto de Ventas</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="923b6bca-1892-47f0-b4cf-37726a3d5a3d">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb589a04-c4ee-4639-ab5c-84090ad958c6">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_IMPUESTO_VENTAS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="93eece93-f63b-4c71-a74f-20beafbebde5">
+      <ID>NOMBRE LARGO</ID>
+      <Name>Nombre Largo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f4bece92-f7c1-4928-af4b-43ab4617e45e">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b17eae4-9497-436b-91ff-6c9d225afb99">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>COD_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0aca5bd7-f47a-41ae-85ac-1934ad414c61">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3c431da4-3d9b-46bf-9199-8f72efc6cfb4">
+          <TableID>COMP_TD_ARTICULO</TableID>
+          <ColumnID>NOMBRE_LARGO</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="87cd065b-d673-4649-b563-d8b0d7b55a45">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="500c9256-ef55-4679-a5a1-e877566a2374">
+          <TableID>COMP_TD_ARTICULO</TableID>
+          <ColumnID>NOMBRE_LARGO</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2c15153c-6d0b-4ef7-a13b-8d4f8d99dacd">
+      <ID>IND REQUIERE SERIE</ID>
+      <Name>Indicador Requiere serie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75d380d7-a2c4-478e-9be5-84e130271661">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4adeb71-0bff-4304-8dd9-188d3d821789">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_REQUIERE_SERIE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e752cd87-592c-48e3-a39c-abe4f2c28abf">
+      <ID>GARANTIA</ID>
+      <Name>Garantía</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="61807670-e054-454e-922f-58f6ba6a768e">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="346faf65-8daa-425f-a920-d41fac1927f7">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>GARANTIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="83224ba3-0902-471f-9028-994f1b305847">
+      <ID>IND IMPORTADO</ID>
+      <Name>Indicador de importado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9b837ce6-a2d8-49c0-a1a1-a980b77be645">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49062bb1-f9db-45ba-9bb8-3fb866367c70">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_IMPORTADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="768e4e8a-32e5-4802-9d24-0d27dc8f2d61">
+      <ID>COSTO DOLARES</ID>
+      <Name>Costo en dólares</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33429b93-e735-4cd4-94ec-b9b0b95c6678">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5571e141-ad11-4686-8ac2-07ca78dce500">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>COSTO_DOLARES</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e16b09c9-8548-4b1c-8158-af1d1bcce62c">
+      <ID>MARGEN UTILIDAD</ID>
+      <Name>Margen Utilidad</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="17e43299-de98-48d4-8e12-4bed9ffe1728">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0ff0ed7-1920-4244-a8c1-bcbcaa525fa6">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MARGEN_UTILIDAD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="826617f0-8dc6-4312-aada-e600f8e92539">
+      <ID>IND SOLICITA SERIE</ID>
+      <Name>Indicador Solicita serie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af537bf4-c6ed-43cd-8690-3d8dc975808d">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5fda1cab-2150-4ac4-941b-da2ae263985c">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_SOLICITA_SERIE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1029c2e3-0ae7-4dcc-8207-d731fc58c072">
+      <ID>MODELO</ID>
+      <Name>Modelo</Name>
+      <EstimatedCount>58009</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de85deff-a289-435b-b44a-9e52ac30c2c3">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c24f3b7-b968-4a87-b9f3-ba8a16913ee6">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MODELO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c74c80a7-2cb8-48a3-8c03-f233d57a1190">
+      <ID>IND PERMITE EXTRAGARANTIA</ID>
+      <Name>Indicador permite extragarantía</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a24e4a2-6929-4da2-bb07-54720a145009">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ecaebad-51c0-4d2b-92fc-6325ff47a4bb">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_PERMITE_EXTRAGARANTIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0c8e4c0b-ca4b-42de-bd6e-5ab21f9baaea">
+      <ID>MAX MESES EXTRAGARANTIA</ID>
+      <Name>Máximo meses extragarantía</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1095606a-3fe1-4262-9e72-284e7dcdc7d3">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="14825ed0-3b54-4999-b2e5-dcf51ed6a59e">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MAX_MESES_EXTRAGARANTIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c1cc1b48-1b16-4039-af35-d8bb55847e29">
+      <ID>IND FACTURA EXTRAGARANTIA</ID>
+      <Name>Indicador factura extragarantía</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c237f9c9-efdf-4766-bda7-1e9109a8f788">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ccd15fba-8ae5-4656-934e-f6d3b624175e">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_FACTURA_EXTRAGARANTIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="11f03053-502b-4875-988f-90f422b0eb03">
+      <ID>CODIGO ARTICULO SUSTITUTO</ID>
+      <Name>Código artículo sustituto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e46d1ec-a260-45a7-95cd-033ddab87574">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef406b07-4f20-42e0-8c9e-98ab3651348e">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>CODIGO_ARTICULO_SUSTITUTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce5e4f04-1937-4253-99c1-56a6989abfe2">
+      <ID>ULTIMO COSTO</ID>
+      <Name>Último Costo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c2a322f-b88f-4419-84c1-1b73eab2edec">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8ab71bfa-8554-4eef-b798-b10c7ea16b24">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>ULTIMO_COSTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b3436981-8b66-4a79-bc0d-9782c33103f3">
+      <ID>IND COMPRA TIENDA</ID>
+      <Name>Indicador compra tienda</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c0e947e-9489-4097-92cf-d55caccc05df">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07677de5-8176-4f68-9c76-d1144da1bd98">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_COMPRA_TIENDA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9047275e-bf90-48a5-b3eb-861806da83ab">
+      <ID>IND REGALIA</ID>
+      <Name>Indicador de regalía</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f994643-25e2-4b14-9a27-cd0ceec397e6">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a66d266-ba3a-46d4-9d8b-a390315f655b">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_REGALIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d66e9350-285b-4244-9302-9d4533d83390">
+      <ID>FECHA ULTIMA COMPRA</ID>
+      <Name>Fecha última compra</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="935f09cb-df37-4968-8a1b-d4d66d578f1c">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05c43fc1-4bfc-461a-aac0-04cfc9f055e7">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>FECHA_ULTIMA_COMPRA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4cea3cc6-9e2c-4a6e-bd85-a5289a2f6e5e">
+      <ID>MARGEN INICIAL</ID>
+      <Name>Margen inicial</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a2d3fb99-2469-4132-a9bf-ba25765da3a8">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e7bff57-20b0-43be-9787-8baa21da8228">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MARGEN_INICIAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9fec2fe-e6f0-423e-846e-05fbff709090">
+      <ID>MARGEN FINAL</ID>
+      <Name>Margen Final</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7a871b26-c9fd-4551-882a-196b9bc79069">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34c0ce37-f4bd-4045-b3de-489146f47672">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MARGEN_FINAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f6d673c5-b842-4055-9e13-3cfd8d82f1e8">
+      <ID>MARGEN SEGUNDA</ID>
+      <Name>Margen segunda</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="53d3cf99-2a7e-4e31-9e37-04276acb3265">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="891c3040-9102-43b8-8389-80c76138ff5e">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MARGEN_SEGUNDA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fc96cd4-702d-43df-917c-88f1694ee91f">
+      <ID>FECHA ULTIMO COSTO</ID>
+      <Name>Fecha último costo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ec4624e-a41a-41c0-8f45-dc37f77fd0c7">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b6c8417-538e-43eb-9916-592392e12dea">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>FECHA_ULTIMO_COSTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f8122685-0a8b-427e-a6e5-61cda8fb2b9f">
+      <ID>IND VAL CANTIDAD PEDIDO</ID>
+      <Name>Indicador validación de cantidad de pedido</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d79e4a0c-af26-4da4-bf66-67b47288c22b">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b24407bd-f3e1-48e0-901f-bfedc747912c">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_VAL_CANTIDAD_PEDIDO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="25fb51da-391a-4e7a-a817-33c6183e8db4">
+      <ID>CANTIDAD PEDIDA VAR</ID>
+      <Name>Cantidad pedida de variación</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f6dedc57-01ea-43e9-bd48-d860cea01cbf">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b749979-23a6-42f5-a487-6e768159870b">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>CANTIDAD_PEDIDA_VAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e629510d-fdad-4012-b09a-7f0f6fabd208">
+      <ID>CONDICION REABASTECIMIENTO</ID>
+      <Name>Condición de reabastecimiento</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4cf5a063-ff1d-4eee-9f4e-a4a816d73f93">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6db42a4a-54cf-4490-80d9-8d2f090a0d7d">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>CONDICION_REABASTECIMIENTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="16c37762-f4f3-4675-947c-099e2228b08a">
+      <ID>CANTIDAD DIAS NUEVO</ID>
+      <Name>Cantidad de días nuevo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9b21406a-3918-4850-8df7-1fff2f7302c8">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b9980df-7855-457a-9884-eb8cc600f62c">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>CANTIDAD_DIAS_NUEVO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f69e401-4820-4c41-84cc-470386904f35">
+      <ID>DIAS REABASTECIMIENTO</ID>
+      <Name>Días para reabastecimiento</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b445d6a-f773-48dc-94ab-c3d33762c1aa">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73ea156b-9461-49c6-a720-da5706125062">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>DIAS_REABASTECIMIENTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dd6295cf-2d09-4951-b665-d60f98d8225e">
+      <ID>IND FACIL MANEJO</ID>
+      <Name>Indicador de fácil manejo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="77b88a36-a91a-4781-96d9-d2e18eefb7d5">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8606bc80-f599-43d0-b973-c22c83ad638b">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_FACIL_MANEJO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="07c69e04-d535-49e7-b1ef-239cbc20e614">
+      <ID>ULTIMO COSTO DIGITADO</ID>
+      <Name>Último Costo digitado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ca187d56-7105-4e78-9fd3-3428d0239ae7">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62de1b3e-91fd-4772-9e23-e87e05aa1696">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>ULTIMO_COSTO_DIGITADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c32b7ea0-f4ee-4337-8431-53d6e6973792">
+      <ID>CLASE PRODUCTO</ID>
+      <Name>Clase del producto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="508bf63e-a869-4a7e-92e1-fa3198847f46">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1e09b94-6b1e-4c4d-b916-b066b1ec9e4c">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>CLASE_PRODUCTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="90957015-6c32-4b38-bf0a-28be09809ba9">
+      <ID>IND FACTURA ASISTENCIA</ID>
+      <Name>Indicador factura asistencia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd9af1b0-0573-4159-90a3-f569b1d037b6">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8d90998-489c-482c-83e5-62209e245640">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_FACTURA_ASISTENCIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e1bbfa3-079e-4986-b3e1-213fb5aad85e">
+      <ID>IND SUSPENDIDO</ID>
+      <Name>Indicador Suspendido</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9c068bee-c8bd-4b18-85a9-1c986be73b15">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b8f58d2-5226-499a-9307-e2193de62d36">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_SUSPENDIDO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7b8f254a-425b-4095-b63f-13f5734b8013">
+      <ID>MOTIVO SUSPENSION</ID>
+      <Name>Motivo suspensión</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bce630c9-bc64-4836-ad81-7050dd285355">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d79fd78e-4fa1-48f4-b58d-28c27507895a">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MOTIVO_SUSPENSION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="04deb686-060f-4702-bbe7-d5dcd74ff6a5">
+      <ID>IND DISTRIBUCION</ID>
+      <Name>Indicador distribución</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c5ffb065-309b-47cd-94cf-6a540f0bf99a">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f0bffe4c-475f-429f-8ae5-2043bda86932">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>IND_DISTRIBUCION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="12670e01-d6df-49e4-bbc3-3eb0541e7ac4">
+      <ID>FECHA HASTA CUANDO DISTRIBUYE</ID>
+      <Name>Fecha hasta cuando se distribuye</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1c3bd171-df2f-4447-a88b-aa8597bc6baa">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eff00733-bd03-4458-86be-368fa4d7d5d1">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>FECHA_HASTA_CUANDO_DISTRIBUYE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="886d3255-0a3b-400f-bfa7-26a813e20382">
+      <ID>MOTIVO DISTRIBUCION</ID>
+      <Name>Motivo de distribución</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c8504b1-2588-46a0-b5e3-26093ebfbc6d">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a57d871-f4d0-41b7-88ac-689d0f7fd023">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MOTIVO_DISTRIBUCION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="800e5f53-0f50-497a-8638-866020c51362">
+      <ID>MARGEN UTILIDAD MINIMA</ID>
+      <Name>Margen utilidad mínima</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c1ba7d07-ebb1-4901-b324-8aa59be48ebd">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d10e4b99-3573-459e-af40-a0d2b8a05674">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MARGEN_UTILIDAD_MINIMA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dd23b6ac-ff35-4165-a890-7ac078c202ff">
+      <ID>MARGEN INICIAL GOLFITO</ID>
+      <Name>Margen inicial Golfito</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0f516984-2e72-45b9-a885-d1f820393226">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7167cc91-7eb9-4c50-a2e5-87a4d67e7627">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MARGEN_INICIAL_GOLFITO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8a1d2238-f0fc-48f6-b1cf-f82ca1f90cbb">
+      <ID>MARGEN FINAL GOLFITO</ID>
+      <Name>Margen final Golfito</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="efde0f7f-9022-4994-92b6-616949d58c8a">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4445c244-0dfa-4531-8667-0aa8a6cde0a6">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MARGEN_FINAL_GOLFITO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1bad604e-fd6c-43b0-9801-b6dc24e21c59">
+      <ID>MARGEN SEGUNDA GOLFITO</ID>
+      <Name>Margen segunda Golfito</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="deb967a0-2d8a-4bd4-af49-520b78c00194">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="330bce08-f614-4459-87b9-e1c10dfe0f42">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>MARGEN_SEGUNDA_GOLFITO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="40bae497-afee-414d-b2fa-d5ac424aae07">
+      <ID>TIPO PRODUCTO</ID>
+      <Name>Tipo de Producto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7fe8fe9-6c14-4726-bcb8-2db41bdc57e8">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="945d4f5d-de89-414e-99c6-f01693ff605d">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>TIPO_PRODUCTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d9c09abb-2fd2-49bf-b926-0c3f484bc1c9">
+      <ID>CLASIFICACION</ID>
+      <Name>Clasificación</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5c12220-dd10-4d1a-b98b-085b687d651b">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="857c5623-60a6-4431-a823-5dcb445535e9">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>CLASIFICACION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3edcd1e7-7416-40b5-b3e7-670eaf0e5a1a">
+      <ID>DES IND DESCONTINUADO</ID>
+      <Name>DES IND DESCONTINUADO</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f5ad4a93-7a87-4262-9f75-169429b729ea">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d475115-d78a-4808-85d8-f4a607529507">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>DES_IND_DESCONTINUADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9b4f020b-d6f6-4cf0-891b-bb5eb2e5f851">
+      <ID>DES MOTIVO DESCONTINUADO</ID>
+      <Name>DES MOTIVO DESCONTINUADO</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2c33eefb-a936-41f5-a9ab-60206d78fbea">
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85902507-b71d-4d70-9ac7-e2dbdf0a5340">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>DES_MOTIVO_DESCONTINUADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="58c8e06b-3a6a-4a39-9c92-e06de210be1c">
+      <ID>DES COMPANIA</ID>
+      <Name>Compañía</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bfa01d93-92aa-462c-bf6c-693582537d83">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e182e78-e35b-4ca3-a339-2588afd71490">
+            <TableID>COMP_TD_ARTICULO</TableID>
+            <ColumnID>DES_COMPANIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="d699040f-7375-4d14-8073-c0a5182445da">
+      <ID>Hierarchy 4</ID>
+      <Name>Artículo</Name>
+      <Levels>
+        <Level dwd:design-time-name="c6386e3f-ecec-4ff1-9c6c-f226765dc9ba">
+          <ID>DES CLASE ARTICULO</ID>
+          <Name>Clase Artículo</Name>
+          <SourceAttributeID>DES CLASE ARTICULO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="88d6656f-42a0-4387-9780-d37f6e14accd">
+          <ID>DES CATEGORIA ARTICULO</ID>
+          <Name>Categoría Artículo</Name>
+          <SourceAttributeID>DES CATEGORIA ARTICULO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cb6e4180-b359-4357-ab8e-b342a86f4641">
+          <ID>DES SEGMENTO ARTICULO</ID>
+          <Name>Segmento Artículo</Name>
+          <SourceAttributeID>DES SEGMENTO ARTICULO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b8d01b5d-dbcc-4dec-bb0c-587ac45f61f1">
+          <ID>DES MARCA ARTICULO</ID>
+          <Name>Marca Artículo</Name>
+          <SourceAttributeID>DES MARCA ARTICULO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d2c44e1b-f6fa-4a94-bdd3-a8d18ddb689d">
+          <ID>DES ARTICULO</ID>
+          <Name>Artículo</Name>
+          <SourceAttributeID>DES ARTICULO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="6feeec3d-6d0a-4e0a-8188-f55bae8fa08a">
+      <ID>Hierarchy 5</ID>
+      <Name>Motivo Descontinuado</Name>
+      <Levels>
+        <Level dwd:design-time-name="69b1f6c4-5730-462e-95e9-5fe9f80b141b">
+          <ID>DES MOTIVO DESCONTINUADO</ID>
+          <Name>Motivo Descontinuado</Name>
+          <SourceAttributeID>DES MOTIVO DESCONTINUADO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="857ebeb7-ea29-4700-b2c0-816848a8594c">
+      <ID>Hierarchy 6</ID>
+      <Name>Indicador Descontinuado</Name>
+      <Levels>
+        <Level dwd:design-time-name="0c64d1a4-2f6c-4dff-9940-27caff19eb8b">
+          <ID>DES IND DESCONTINUADO</ID>
+          <Name>Indicador Descontinuado</Name>
+          <SourceAttributeID>DES IND DESCONTINUADO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="65ba8b0b-711d-4ac6-bfe9-07fbb7419a2a">
+      <ID>Hierarchy</ID>
+      <Name>Modelo Artículo</Name>
+      <Levels>
+        <Level dwd:design-time-name="88df1ca1-829f-4e38-8433-bd18edafb34b">
+          <ID>Modelo</ID>
+          <Name>Modelo</Name>
+          <SourceAttributeID>MODELO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

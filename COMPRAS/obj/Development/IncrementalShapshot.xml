@@ -1,0 +1,229 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>COMPRAS</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>eKFFym1yFNKZqUYWdJmNc3LlRMg=10/16/2023 2:27:30 PM10/11/2023 9:56:06 AM</TimeStamp>
+        <ID>
+          <String>DWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>EwKsDckyj2sGGVLFzaCZ2PWjImo=11/22/2023 3:38:49 PM10/13/2023 4:58:21 PM</TimeStamp>
+        <ID>
+          <String>DWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nFXLhWT7NoSt9D5ByuIlCyOtVpU=10/16/2023 2:35:16 PM10/16/2023 9:18:54 AM</TimeStamp>
+        <ID>
+          <String>Almacén Fiscal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tEg1aLqft3/IIraLtTutl2ffinc=11/16/2023 4:23:10 PM10/16/2023 10:19:41 AM</TimeStamp>
+        <ID>
+          <String>Artículo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>b+whoyj7ya7wjZr8kQ9jT0YHawM=10/16/2023 2:37:03 PM10/16/2023 11:10:18 AM</TimeStamp>
+        <ID>
+          <String>Estado Orden</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZjDQHyQJrBx0VJVpNYRwRkG43R0=10/16/2023 2:35:16 PM10/16/2023 11:20:43 AM</TimeStamp>
+        <ID>
+          <String>Fecha Documento Importación</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+W4zFsN7vXn8Bfbh0P//Pddfuk0=10/16/2023 2:37:03 PM10/16/2023 11:29:16 AM</TimeStamp>
+        <ID>
+          <String>Fecha OC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OvWMdMmCHK24GFEcyNjA2VqK0Qg=10/16/2023 2:37:03 PM10/16/2023 11:34:04 AM</TimeStamp>
+        <ID>
+          <String>Fecha Pedido</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>q0vOvxBrkdmkJ35I7mBuF66llQM=11/16/2023 4:43:27 PM10/16/2023 11:38:21 AM</TimeStamp>
+        <ID>
+          <String>Moneda</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>q2xC/yZTn/NLZ8JxK/cCwJvj4MU=10/16/2023 2:35:16 PM10/16/2023 11:39:31 AM</TimeStamp>
+        <ID>
+          <String>Número Contenedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zHGmY92S06++XTzKg8HSRqpNWaw=10/16/2023 2:37:03 PM10/16/2023 11:42:00 AM</TimeStamp>
+        <ID>
+          <String>Número de Documento</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WzZzEeLdOvwjaAsQrEi1TdwRmQI=10/16/2023 2:35:16 PM10/16/2023 11:43:07 AM</TimeStamp>
+        <ID>
+          <String>Número Documento IMP</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0005KiyzA8oQ+Ht8PuBG6mBkdmw=10/16/2023 2:35:17 PM10/16/2023 11:44:22 AM</TimeStamp>
+        <ID>
+          <String>Número de Embarque</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>C9zjscbRTM5PpXE5ciDc33od1Zk=10/16/2023 2:35:16 PM10/16/2023 11:45:30 AM</TimeStamp>
+        <ID>
+          <String>Número Factura IMP</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>txjMtKbTDqi2/enlcYH1Ka18M1A=10/16/2023 2:37:03 PM10/16/2023 11:46:22 AM</TimeStamp>
+        <ID>
+          <String>Número de Orden</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lf1pSWZfPY0Wi75DI5+CCCgIuqM=10/16/2023 2:37:03 PM10/16/2023 11:48:26 AM</TimeStamp>
+        <ID>
+          <String>Número Pedido</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8jLQX9I+q1n07FQMS8MMN/gRTjw=10/16/2023 2:35:17 PM10/16/2023 11:49:34 AM</TimeStamp>
+        <ID>
+          <String>Tipo Compra Embarque</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0fBmIiSNvCktWChu1zo08OItNRI=10/16/2023 2:35:17 PM10/16/2023 11:51:54 AM</TimeStamp>
+        <ID>
+          <String>Ubicación Contenedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>C2oEg/FBacdAUhaCod76Fc9bA8g=11/16/2023 10:56:45 AM10/16/2023 11:55:32 AM</TimeStamp>
+        <ID>
+          <String>Tipo Compra</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gvVgd8+xyUFZmqYx5rib6PQc5ZE=10/16/2023 2:35:17 PM10/16/2023 1:15:38 PM</TimeStamp>
+        <ID>
+          <String>Fecha Ingreso Bodega</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ODOTDsMmyjC9yh3q4kn86AbeKkc=10/16/2023 2:35:17 PM10/16/2023 1:20:10 PM</TimeStamp>
+        <ID>
+          <String>Compañía</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>e9s2qli+Nv0P8AtWohfra1mr3pM=11/16/2023 4:43:27 PM10/16/2023 1:21:10 PM</TimeStamp>
+        <ID>
+          <String>Proveedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oviJUEKoZEs6NhWNBuvf0Nh5m04=10/16/2023 2:37:03 PM10/16/2023 1:28:49 PM</TimeStamp>
+        <ID>
+          <String>Tienda</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gJGS9OmbpXfbRbVsLJ9PpQ6+lA0=10/16/2023 2:37:03 PM10/16/2023 1:35:45 PM</TimeStamp>
+        <ID>
+          <String>Indicador Pasa CEDI</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Z4IQuZRumoAH+j0SNwa/uOJ6MmM=11/16/2023 4:43:27 PM11/16/2023 3:02:20 PM</TimeStamp>
+        <ID>
+          <String>Año Fiscal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>F2ixLW5hU3UoogJR35Fab4kfYAQ=11/16/2023 4:43:27 PM11/9/2023 3:15:42 PM</TimeStamp>
+        <ID>
+          <String>Fecha Proceso Importación</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Eso+tRusEDpnMMY6O0IQeKlnpoY=11/22/2023 3:38:35 PM11/20/2023 10:29:15 AM</TimeStamp>
+        <ID>
+          <String>Periodo Budget - Forecast</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>zKW3wiZcMf54CPKOLXXbtMW3Vpg=11/22/2023 3:38:35 PM10/16/2023 1:48:28 PMeQp5d9//z3xeweM7vs9ctoVAr4M=11/22/2023 3:38:35 PM10/16/2023 1:48:28 PM</TimeStamp>
+        <ID>
+          <String>Compras</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>qM0nhL4QyqCU4kmtrJ3QMt8vj98=10/11/2023 9:54:03 AM10/11/2023 9:54:03 AM</TimeStamp>
+      <ID>
+        <String>COMPRAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-11-22T21:41:44.47Z</LastDeployed>
+</DeploymentSnapshot>
